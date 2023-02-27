@@ -1,0 +1,12 @@
+# FROM alpine
+FROM node:18.14.2-alpine3.17
+RUN apk add git \
+    && git clone https://github.com/vladimirplesco/my-node-web.git \
+    && cd my-node-web
+# RUN apk add node
+WORKDIR /my-node-web 
+
+EXPOSE 3000
+
+CMD node app.js
+

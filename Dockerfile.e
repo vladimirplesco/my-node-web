@@ -6,6 +6,6 @@ WORKDIR /home/web-app/
 
 COPY ./  /home/web-app/
 
-EXPOSE 8080
+EXPOSE 3000
 
 CMD node app.js
